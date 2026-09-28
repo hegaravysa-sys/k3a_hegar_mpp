@@ -1,0 +1,72 @@
+{
+  "entities": {
+    "vessels": {
+      "title": "Kapal (Vessels)",
+      "description": "Data jadwal dan operasional kapal kargo di terminal peti kemas",
+      "properties": {
+        "name": { "type": "string" },
+        "imo": { "type": "string" },
+        "flag": { "type": "string" },
+        "ownerName": { "type": "string" },
+        "berth": { "type": "string" },
+        "status": { "type": "string" },
+        "eta": { "type": "string" },
+        "etd": { "type": "string" },
+        "teusCapacity": { "type": "number" },
+        "currentTeus": { "type": "number" },
+        "craneAssigned": { "type": "string" },
+        "origin": { "type": "string" },
+        "destination": { "type": "string" }
+      }
+    },
+    "bookings": {
+      "title": "Pemesanan (Bookings)",
+      "description": "Data permohonan booking muatan dan peti kemas dari pelanggan dan agen",
+      "properties": {
+        "bookingNumber": { "type": "string" },
+        "customerName": { "type": "string" },
+        "agentName": { "type": "string" },
+        "vesselName": { "type": "string" },
+        "containerType": { "type": "string" },
+        "quantity": { "type": "number" },
+        "originPort": { "type": "string" },
+        "destinationPort": { "type": "string" },
+        "cargoDescription": { "type": "string" },
+        "status": { "type": "string" },
+        "totalAmount": { "type": "number" },
+        "paymentStatus": { "type": "string" }
+      }
+    },
+    "containers": {
+      "title": "Peti Kemas (Containers)",
+      "description": "Inventaris dan pelacakan posisi kontainer di lapangan penumpukan (yard)",
+      "properties": {
+        "containerNumber": { "type": "string" },
+        "size": { "type": "string" },
+        "type": { "type": "string" },
+        "status": { "type": "string" },
+        "yardBlock": { "type": "string" },
+        "yardRow": { "type": "string" },
+        "yardTier": { "type": "number" },
+        "sealNumber": { "type": "string" },
+        "weightGross": { "type": "number" },
+        "customsCleared": { "type": "boolean" },
+        "consignee": { "type": "string" }
+      }
+    },
+    "invoices": {
+      "title": "Laporan Keuangan & Faktur (Invoices)",
+      "description": "Pencatatan tagihan THC, penumpukan, stevedoring, dan laporan keuangan terminal",
+      "properties": {
+        "invoiceNumber": { "type": "string" },
+        "customerName": { "type": "string" },
+        "serviceType": { "type": "string" },
+        "amount": { "type": "number" },
+        "tax": { "type": "number" },
+        "total": { "type": "number" },
+        "status": { "type": "string" },
+        "dueDate": { "type": "string" }
+      }
+    }
+  }
+}

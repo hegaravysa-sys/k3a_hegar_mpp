@@ -1,0 +1,6 @@
+{
+  "name": "PortOps - Terminal Peti Kemas",
+  "description": "Sistem manajemen operasional terminal peti kemas terpadu untuk pemilik kapal, agen logistik, dan pelanggan: pemesanan peti kemas, pelacakan kapal, manajemen lapangan (yard), serta laporan keuangan real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
